@@ -68,8 +68,6 @@ export default function renderArena(selectedFighters) {
     root.innerHTML = '';
     root.append(arena);
 
-    showWinnerModal(selectedFighters[0]);
-
     fight(...selectedFighters)
         .then(fighter => {
             showWinnerModal(fighter);
@@ -77,8 +75,4 @@ export default function renderArena(selectedFighters) {
         .catch(error => {
             console.warn(error);
         });
-
-    // todo:
-    // - start the fight
-    // - when fight is finished show winner
 }
