@@ -1,5 +1,7 @@
+import { createFighterPreview } from '../fighterPreview';
 import showModal from './modal';
 
 export default function showWinnerModal(fighter) {
-    // call showModal function
+    const bodyElement = createFighterPreview(fighter);
+    showModal({ title: `The winner: ${fighter.name}`, bodyElement });
 }

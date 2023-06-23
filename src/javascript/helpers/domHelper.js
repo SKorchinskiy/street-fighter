@@ -2,7 +2,7 @@ export default function createElement({ tagName, className, attributes = {} }) {
     const element = document.createElement(tagName);
 
     if (className) {
-        const classNames = className.split(' ').filter(Boolean); // Include only not empty className values after the splitting
+        const classNames = className.split(' ').filter(Boolean);
         element.classList.add(...classNames);
     }
 

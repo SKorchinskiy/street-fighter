@@ -40,6 +40,5 @@ function createModal({ title, bodyElement, onClose }) {
 export default function showModal({ title, bodyElement, onClose = () => {} }) {
     const root = getModalContainer();
     const modal = createModal({ title, bodyElement, onClose });
-
     root.append(modal);
 }
