@@ -13,7 +13,6 @@ export async function getFighterInfo(fighterId) {
         fighterDetailsMap.set(fighterId, fighterDetails);
     }
     return fighterDetailsMap.get(fighterId);
-    // get fighter info from fighterDetailsMap or from service and write it to fighterDetailsMap
 }
 
 function startFight(selectedFighters) {

@@ -18,8 +18,6 @@ class FighterService {
         const mountedUrl = `${this.#details}${id}.json`;
         const fighterDetails = await callApi(mountedUrl);
         return fighterDetails;
-        // todo: implement this method
-        // endpoint - `details/fighter/${id}.json`;
     }
 }
 
